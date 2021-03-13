@@ -21,6 +21,9 @@ import Field from "../Field.vue";
 import Input from "../Input.vue";
 import TextareaInput from "../Input/TextareaInput.vue";
 
+/**
+ * Have a look at `<k-field>`, `<k-input>` and `<k-textarea-input>` for additional information.
+ */
 export default {
   inheritAttrs: false,
   props: {

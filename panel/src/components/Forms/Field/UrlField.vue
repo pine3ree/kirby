@@ -27,6 +27,9 @@ import Field from "../Field.vue";
 import Input from "../Input.vue";
 import UrlInput from "../Input/UrlInput.vue";
 
+/**
+ * Have a look at `<k-field>`, `<k-input>` and `<k-url-input>` for additional information.
+ */
 export default {
   inheritAttrs: false,
   props: {

@@ -16,6 +16,9 @@ import Field from "../Field.vue";
 import Input from "../Input.vue";
 import TimeInput from "../Input/TimeInput.vue";
 
+/**
+ * Have a look at `<k-field>`, `<k-input>` and `<k-time-input>` for additional information.
+ */
 export default {
   inheritAttrs: false,
   props: {

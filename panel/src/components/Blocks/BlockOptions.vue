@@ -68,6 +68,9 @@
 </template>
 
 <script>
+/**
+ * @internal
+ */
 export default {
   props: {
     isBatched: Boolean,
