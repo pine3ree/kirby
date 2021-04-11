@@ -2,7 +2,7 @@
 
 namespace Kirby\Cms;
 
-use Kirby\Assets\HasAsset;
+use Kirby\File\HasFile;
 
 /**
  * FileVersion
@@ -15,7 +15,7 @@ use Kirby\Assets\HasAsset;
  */
 class FileVersion
 {
-    use HasAsset;
+    use HasFile;
 
     protected $modifications;
     protected $original;

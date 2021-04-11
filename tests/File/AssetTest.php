@@ -1,6 +1,6 @@
 <?php
 
-namespace Kirby\Assets;
+namespace Kirby\File;
 
 use Kirby\Cms\App;
 use PHPUnit\Framework\TestCase as TestCase;

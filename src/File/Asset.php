@@ -1,6 +1,6 @@
 <?php
 
-namespace Kirby\Assets;
+namespace Kirby\File;
 
 /**
  * Anything in your public path can be converted
@@ -8,7 +8,7 @@ namespace Kirby\Assets;
  * methods as for any other Kirby files. Pass a
  * relative path to the class to create the asset.
  *
- * @package   Kirby Cms
+ * @package   Kirby File
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier GmbH
@@ -16,7 +16,7 @@ namespace Kirby\Assets;
  */
 class Asset
 {
-    use HasAsset;
+    use HasFile;
 
     /**
      * Relative file path

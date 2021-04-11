@@ -1,12 +1,12 @@
 <?php
 
-use Kirby\Assets\Name;
 use Kirby\Cms\App;
 use Kirby\Cms\Collection;
 use Kirby\Cms\File;
 use Kirby\Cms\FileVersion;
 use Kirby\Cms\Template;
 use Kirby\Data\Data;
+use Kirby\File\Name;
 use Kirby\Http\Server;
 use Kirby\Http\Uri;
 use Kirby\Http\Url;

@@ -2,9 +2,9 @@
 
 namespace Kirby\Toolkit;
 
-use Kirby\Http\Response;
-
 use Exception;
+
+use Kirby\Http\Response;
 
 /**
  * Flexible File object with a set of helpful

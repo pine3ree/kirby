@@ -1,17 +1,16 @@
 <?php
 
-namespace Kirby\Assets;
+namespace Kirby\File;
 
-use Kirby\Cms\App;
 use PHPUnit\Framework\TestCase as TestCase;
 
-class SomethingWithAsset {
-    use HasAsset;
+class SomethingWithAsset
+{
+    use HasFile;
 }
 
-class HasAssetTest extends TestCase
+class HasFileTest extends TestCase
 {
-
     protected function _asset($file = 'blank.pdf')
     {
         return new SomethingWithAsset([
@@ -31,13 +30,13 @@ class HasAssetTest extends TestCase
     public function testAsset()
     {
         $asset = $this->_asset();
-        $this->assertInstanceOf('Kirby\Assets\File', $asset->asset());
+        $this->assertInstanceOf('Kirby\File\File', $asset->asset());
     }
 
     public function testAssetImage()
     {
         $asset = $this->_asset('cat.jpg');
-        $this->assertInstanceOf('Kirby\Assets\Image', $asset->asset());
+        $this->assertInstanceOf('Kirby\File\Image', $asset->asset());
     }
 
     public function testKirby()

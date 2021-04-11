@@ -1,13 +1,11 @@
 <?php
 
-namespace Kirby\Assets;
+namespace Kirby\File;
 
-use Kirby\Cms\App;
 use PHPUnit\Framework\TestCase as TestCase;
 
 class FileTest extends TestCase
 {
-
     protected function _file($file = 'blank.pdf')
     {
         return new File([
@@ -77,5 +75,4 @@ class FileTest extends TestCase
         $this->assertSame('pdf', $file->toArray()['extension']);
         $this->assertSame(false, $file->toArray()['isResizable']);
     }
-
 }

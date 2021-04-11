@@ -1,6 +1,6 @@
 <?php
 
-namespace Kirby\Assets;
+namespace Kirby\File;
 
 use Kirby\Cms\App;
 use Kirby\Exception\Exception;
@@ -9,12 +9,13 @@ use Kirby\Toolkit\Html;
 use Kirby\Toolkit\Mime;
 use Kirby\Toolkit\Properties;
 use Kirby\Toolkit\V;
+
 /**
  * Extends the `Kirby\Toolkit\File` class with some Cms-specific
  * properties and methods.
  * @since 3.6.0
  *
- * @package   Kirby Assets
+ * @package   Kirby File
  * @author    Nico Hoffmann <nico@getkirby.com>
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier GmbH

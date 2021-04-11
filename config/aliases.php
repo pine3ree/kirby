@@ -60,9 +60,9 @@ return [
     'xml'        => 'Kirby\Toolkit\Xml',
 
     // TODO: Remove with v4
-    'kirby\cms\asset'          => 'Kirby\Assets\Asset',
-    'kirby\cms\filename'       => 'Kirby\Assets\Name',
-    'kirby\cms\filefoundation' => 'Kirby\Assets\HasAsset',
-    'kirby\image\image'        => 'Kirby\Assets\Image',
+    'kirby\cms\asset'          => 'Kirby\File\Asset',
+    'kirby\cms\filename'       => 'Kirby\File\Name',
+    'kirby\cms\filefoundation' => 'Kirby\File\HasAsset',
+    'kirby\image\image'        => 'Kirby\File\Image',
 ];
 // @codeCoverageIgnoreEnd

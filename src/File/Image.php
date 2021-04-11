@@ -1,16 +1,16 @@
 <?php
 
-namespace Kirby\Assets;
+namespace Kirby\File;
 
 use Kirby\Image\Dimensions;
 use Kirby\Image\Exif;
 use Kirby\Toolkit\Html;
 
 /**
- * Extends the `Kirby\Assets\File` class with image-specific methods.
+ * Extends the `Kirby\File\File` class with image-specific methods.
  * @since 3.6.0
  *
- * @package   Kirby Assets
+ * @package   Kirby File
  * @author    Nico Hoffmann <nico@getkirby.com>
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier GmbH

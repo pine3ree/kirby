@@ -2,7 +2,7 @@
 
 namespace Kirby\Cms;
 
-use Kirby\Assets\HasAsset;
+use Kirby\File\HasFile;
 use Kirby\Toolkit\A;
 use Kirby\Toolkit\F;
 use Throwable;
@@ -15,8 +15,8 @@ use Throwable;
  * URL or resizing an image. It also
  * handles file meta data.
  *
- * The File class proxies the `Kirby\Assets\File`
- * or `Kirby\Assets\Image` class, which
+ * The File class proxies the `Kirby\File\File`
+ * or `Kirby\File\Image` class, which
  * is used to handle all asset file methods.
  * In addition the File class handles
  * meta data via `Kirby\Cms\Content`.
@@ -31,10 +31,8 @@ class File extends ModelWithContent
 {
     const CLASS_ALIAS = 'file';
 
+    use HasFile;
     use FileActions;
-    use HasAsset {
-        HasAsset::__call as callAsset;
-    }
     use FileModifications;
     use HasMethods;
     use HasSiblings;

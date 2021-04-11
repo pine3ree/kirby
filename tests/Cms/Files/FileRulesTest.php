@@ -160,7 +160,7 @@ class FileRulesTest extends TestCase
         $file->method('mime')->willReturn('image/jpeg');
         $file->method('extension')->willReturn('jpg');
 
-        $upload = $this->createMock(\Kirby\Assets\Image::class);
+        $upload = $this->createMock(\Kirby\File\Image::class);
         $upload->method('mime')->willReturn('image/png');
         $upload->method('extension')->willReturn('png');
 
