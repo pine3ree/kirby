@@ -412,31 +412,13 @@ class Site extends ModelWithContent
     }
 
     /**
-     * Returns the full path without leading slash
+     * Returns the panel info object
      *
-     * @internal
-     * @return string
+     * @return \Kirby\Cms\SiteForPanel
      */
-    public function panelPath(): string
+    public function panel()
     {
-        return 'site';
-    }
-
-    /**
-     * Returns the url to the editing view
-     * in the panel
-     *
-     * @internal
-     * @param bool $relative
-     * @return string
-     */
-    public function panelUrl(bool $relative = false): string
-    {
-        if ($relative === true) {
-            return '/' . $this->panelPath();
-        } else {
-            return $this->kirby()->url('panel') . '/' . $this->panelPath();
-        }
+        return new SiteForPanel($this);
     }
 
     /**
@@ -674,5 +656,40 @@ class Site extends ModelWithContent
     public function wasModifiedAfter($time): bool
     {
         return Dir::wasModifiedAfter($this->root(), $time);
+    }
+
+
+    /**
+     * Deprecated!
+     */
+
+    /**
+     * Returns the full path without leading slash
+     *
+     * @todo Add `deprecated()` helper warning in 3.7.0
+     * @todo Remove in 3.8.0
+     *
+     * @internal
+     * @return string
+     */
+    public function panelPath(): string
+    {
+        return $this->panel()->path();
+    }
+
+    /**
+     * Returns the url to the editing view
+     * in the panel
+     *
+     * @todo Add `deprecated()` helper warning in 3.7.0
+     * @todo Remove in 3.8.0
+     *
+     * @internal
+     * @param bool $relative
+     * @return string
+     */
+    public function panelUrl(bool $relative = false): string
+    {
+        return $this->panel()->url($relative);
     }
 }
