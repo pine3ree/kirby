@@ -57,6 +57,12 @@ return [
     'str'        => 'Kirby\Toolkit\Str',
     'tpl'        => 'Kirby\Toolkit\Tpl',
     'v'          => 'Kirby\Toolkit\V',
-    'xml'        => 'Kirby\Toolkit\Xml'
+    'xml'        => 'Kirby\Toolkit\Xml',
+
+    // TODO: Remove with v4
+    'kirby\cms\asset'          => 'Kirby\Assets\Asset',
+    'kirby\cms\filename'       => 'Kirby\Assets\Name',
+    'kirby\cms\filefoundation' => 'Kirby\Assets\HasAsset',
+    'kirby\image\image'        => 'Kirby\Assets\Image',
 ];
 // @codeCoverageIgnoreEnd
