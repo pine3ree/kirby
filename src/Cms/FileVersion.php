@@ -133,7 +133,7 @@ class FileVersion
      */
     public function toArray(): array
     {
-        $array = array_merge($this->asset()->ToArray(), [
+        $array = array_merge($this->asset()->toArray(), [
             'modifications' => $this->modifications(),
         ]);
 
